@@ -861,9 +861,10 @@ p {
   margin-bottom: 30px;
 }
 
-.form-checkbox-label:checked + .form-checkbox-label::before {
-  background-color: var(--accent-color);
-  box-shadow: inset 0 0 0 4px #000000;
+.form-checkbox:checked + .form-checkbox-label::before {
+  /* background-color: var(--accent-color); */
+  /* box-shadow: inset 0 0 0 4px #ffffff; */
+  background-image: url(./images/index/check.png);
 }
 
 .form-checkbox:focus + .form-checkbox::before {
