@@ -458,7 +458,7 @@
 <label class="form-field">
   Имя
   <span class="form-input-wrapper">
-  <input type="text" class="form-input" name="user-name">
+  <input type="text" class="form-input" name="user-name" title="Имя должно содержать буквы латиницы либо кириллицы" pattern="[a-zA-Zа-яёА-ЯЁ]+" minlength="2" required>
     <svg class="form-icon touch">
       <use href="../images/icons.svg#icon-person-black"></use>
     </svg>
@@ -467,7 +467,7 @@
 <label class="form-field">
   Телефон
   <span class="form-input-wrapper">
-  <input type="tel" class="form-input" name="user-tel">
+  <input type="tel" class="form-input" name="user-tel" title="093-444-33-22" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
       <svg class="form-icon touch">
         <use href="../images/icons.svg#icon-phone-black"></use>
       </svg>
@@ -476,7 +476,7 @@
 <label class="form-field">
   Почта
   <span class="form-input-wrapper">
-  <input type="mail" class="form-input" name="user-mail">
+  <input type="mail" class="form-input" name="user-mail" required>
       <svg class="form-icon touch">
         <use href="../images/icons.svg#icon-email-black"></use>
       </svg>
@@ -484,10 +484,10 @@
 </label>
 <label class="form-field">
   Комментарий
-  <textarea name="user-message" class="form-message" placeholder="Введите текст"></textarea>
+  <textarea name="user-message" class="form-message touch" placeholder="Введите текст"></textarea>
 </label>
-<input type="checkbox" class="form-checkbox" id="accept-policy">
-<label for="accept-policy" class="form-checkbox-label">Соглашаюсь с рассылкой и принимаю 
+<input type="checkbox" class="form-checkbox visually-hidden" id="accept-policy">
+<label for="accept-policy" class="form-checkbox-label">Соглашаюсь с рассылкой и принимаю &nbsp;
   <a href="/" class="form-label-link">Условия договора</a></label>
   <button type="submit" class="form-btn">Отправить</button>
 </form>
