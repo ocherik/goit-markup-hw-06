@@ -763,6 +763,10 @@ p {
   position: absolute;
 }
 
+.icon-close:hover {
+  fill: var(--accent-color);
+}
+
 .icon-close {
   position: absolute;
   top: 50%;
