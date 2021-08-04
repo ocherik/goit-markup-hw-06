@@ -858,10 +858,8 @@ p {
 }
 
 .form-checkbox:checked + .form-checkbox-label::before {
-  /* background-color: var(--accent-color);
-  box-shadow: inset 0 0 0 4px #ffffff; */
   border: 0px;
-  background-image: url(./images/index/check.svg);
+  background-image: url(../images/index/check.svg);
   background-size: contain;
   box-shadow: none;
 }
